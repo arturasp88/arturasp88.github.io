@@ -319,6 +319,8 @@ var quoteData = [
         $(quote).find(".quote-text").html(data.quote);
         $(quote).find(".quote-credit").attr("href",data.link);
         $(quote).find(".quote-credit").html(data.linkText);
+        $(quote).find(".tag").html(data.category);
+
  
         $(quote).prependTo($(container));
     });

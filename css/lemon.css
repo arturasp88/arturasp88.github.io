@@ -36,8 +36,10 @@
 }
 
 .title {
-    
-    color: #FFBE00;
+    font-family: "Helvetica";
+    font-weight: bold;
+    /*color: #FFBE00;*/
+    color:black;
 }
 
 .navbar-link.linkcolor {
