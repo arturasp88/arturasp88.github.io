@@ -1,21 +1,16 @@
-// On document ready:
 
-$(function(){
+         {
+            category:"creativity",
+            quote:"",
+            link:"",
+            linkText: ""
+        },
+        ---
 
-	// Instantiate MixItUp:
-
-	$('#Container').mixItUp();
-
-});
-
-
-var quoteData = [
- 
-       
         {
             category:"creativity",
             quote:"If we just start going through the motions, if we strum a guitar, or shuffle sticky notes around a conference table, or start kneading clay, the motion kickstarts our brain into thinking.",
-            link:"http://austinkleon.com/steal/",
+            link:"http://austinkleon.com/steal/"",
             linkText: "Austin Kleon - Steal Like An Artist"
         },
 
@@ -120,13 +115,13 @@ var quoteData = [
         },
           {
             category:"creativity",
-            quote:"Whenever you're at a loss for what move to make next, just ask yourself, 'What would make a better story?'",
+            quote:"Whenever you're at a loss for what move to make next, just ask yourself, "What would make a better story?"",
             link:"http://austinkleon.com/steal/",
             linkText: "Austin Kleon - Steal Like An Artist"
         },
         {
             category:"creativity",
-            quote:"Maira Kalman says, 'Avoiding work is the way to focus my mind.'",
+            quote:"Maira Kalman says, "Avoiding work is the way to focus my mind.",
             link:"http://austinkleon.com/steal/",
             linkText: "Austin Kleon - Steal Like An Artist"
         },
@@ -151,7 +146,7 @@ var quoteData = [
         },
          {
             category:"creativity",
-            quote:"'In the beginner's mind, there are many possibilities,' said Zen monk Shunryu Suzuki. 'In the expert's mind, there are few.'",
+            quote:""In the beginner's mind, there are many possibilities," said Zen monk Shunryu Suzuki. "In the expert's mind, there are few."",
             link:"http://austinkleon.com/show-your-work/",
             linkText: "Austin Kleon - Show Your Work!"
         },
@@ -177,7 +172,7 @@ var quoteData = [
 
          {
             category:"creativity",
-            quote:"'You have to make stuff,' said journalist David Carr when he was asked if he had any advice for students. 'No one is going to give a damn about your resume; they want to see what you have made with your own little fingers.'",
+            quote:""You have to make stuff," said journalist David Carr when he was asked if he had any advice for students. "No one is going to give a damn about your resume; they want to see what you have made with your own little fingers."",
             link:"http://austinkleon.com/show-your-work/",
             linkText: "Austin Kleon - Show Your Work!"
         },
@@ -202,7 +197,7 @@ var quoteData = [
         },
          {
             category:"creativity",
-            quote:"Kathy Sierra says, 'Make people better at something they want to be better at.'",
+            quote:"Kathy Sierra says, "Make people better at something they want to be better at." ",
             link:"http://austinkleon.com/show-your-work/",
             linkText: "Austin Kleon - Show Your Work!"
         },
@@ -231,21 +226,7 @@ var quoteData = [
             quote:"The people who get what they're after are very often the ones who just stick around long enough.",
             link:"http://austinkleon.com/show-your-work/",
             linkText: "Austin Kleon - Show Your Work!"
-        }
+        },
 
-
-    ];
-
-    var container = $("#quote-container")
- 
-    $.each(quoteData, function(key,data){
-        var quote ="";
-        quote = $(".quote.template").clone();
-        $(quote).removeClass("template");
-        $(quote).addClass(data.category);
-        $(quote).find(".quote-text").html(data.quote);
-        $(quote).find(".quote-credit").attr("href",data.link);
-        $(quote).find(".quote-credit").html(data.linkText);
- 
-        $(quote).prependTo($(container));
-    });
+  
+           
